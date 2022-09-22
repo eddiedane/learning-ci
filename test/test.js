@@ -1,13 +1,8 @@
-const supertest = require("supertest");
-const assert = require("assert");
+const app = require("../app");
+const request = require("supertest");
 
-const server = supertest.agent("http://localhost:5050");
-
-describe("SAMPLE unit test", () => {
-  it("should return homepage", (done) => {
-    server.get("/").end((err, res) => {
-      assert.equal(res.status, 400);
-      done();
-    });
+describe("GET /", () => {
+  it("responds with 200", async () => {
+    await request(app).get("/").expect(500);
   });
 });
