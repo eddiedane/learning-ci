@@ -3,6 +3,6 @@ const request = require("supertest");
 
 describe("GET /", () => {
   it("responds with 200", async () => {
-    return request(app).get("/").expect(400);
+    return request(app).get("/").expect(200);
   });
 });
