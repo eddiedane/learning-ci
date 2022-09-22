@@ -5,7 +5,5 @@ script:
   - echo '***********Build starts***********'
   - echo 'Installing Dependencies'
   - npm install
-  - echo 'Start app'
-  - node app.js
   - echo 'Running tests'
   - mocha
