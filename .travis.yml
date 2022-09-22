@@ -6,4 +6,4 @@ script:
   - echo 'Installing Dependencies'
   - npm install
   - echo 'Running tests'
-  - mocha
+  - mocha --exit
