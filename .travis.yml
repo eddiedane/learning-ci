@@ -1,6 +1,6 @@
 language: node.js
 node_js:
-  - "16"
+  - "4"
 script:
   - echo '***********Build starts***********'
   - echo 'Installing Dependencies'
