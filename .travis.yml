@@ -1,9 +1,9 @@
 language: node.js
 node_js:
-  - "14"
+  - '14'
 script:
   - echo '***********Build starts***********'
   - echo 'Installing Dependencies'
-  - npm install
+  - npm install && npm install -D
   - echo 'Running tests'
-  - mocha --exit
+  - npm test
