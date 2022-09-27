@@ -4,6 +4,6 @@ node_js:
 script:
   - echo '***********Build starts***********'
   - echo 'Installing Dependencies'
-  - npm install && npm install -D
+  - npm install
   - echo 'Running tests'
   - npm test
