@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '10'
+  - '14'
 dist: trusty
 cache:
   directories:
@@ -9,7 +9,7 @@ install:
   - npm install
   - npm install --save-dev
 script:
-  - nohup npx json-server ./src/server/db.json
+  - nohup npx json-server ./src/server/db.json &
   - sleep 3
   - npm run lint
   - npm run test
