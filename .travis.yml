@@ -9,7 +9,7 @@ install:
   - npm install
   - npm install --save-dev
 script:
-  - nohup npx json-server ./src/server/db.json
+  - nohup npx json-server ./src/server/db.json &
   - sleep 3
   - npm run lint
   - npm run test
